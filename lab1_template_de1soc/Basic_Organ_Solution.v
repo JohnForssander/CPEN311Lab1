@@ -212,21 +212,12 @@ wire Sample_Clk_Signal;
 //
 
 // Select the note based on the state of the switches
-// S[0] off means turn off
-always_comb
- begin
-  case (SW[3:0])
-    4'b0001: Clock_Audio = Clock_Do;
-    3'b0011: Clock_Audio = Clock_Re;
-    4'b0101: Clock_Audio = Clock_Mi;
-    4'b0111: Clock_Audio = Clock_Fa;
-    4'b1001: Clock_Audio = Clock_So;
-    4'b1011: Clock_Audio = Clock_La;
-    4'b1101: Clock_Audio = Clock_Ti;
-    4'b1111: Clock_Audio = Clock_Do2;
-    default: Clock_Audio = 32'b0;
-  endcase
- end
+SelectFrequencies 
+ToneOrgan
+(.Clocks({Clock_Do2,Clock_Ti,Clock_La,Clock_So,Clock_Fa,Clock_Mi,Clock_Re,Clock_Do}),
+.Switches(SW[3:1]),
+.outclk_audio(Clock_Audio)
+);
 
 // Instatiate clock dividers for each note     
 Generate_Arbitrary_Divided_Clk32 
@@ -301,7 +292,8 @@ Gen_Do2_clk
 .Reset(1'h1)
 );
 
-assign Sample_Clk_Signal = Clock_Audio;
+// S[0] LOW off means turn off
+assign Sample_Clk_Signal = SW[0] ? Clock_Audio : 1'b0;
 
 //Audio Generation Signal
 //Note that the audio needs signed data - so convert 1 bit to 8 bits signed

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Basic_Organ_Solution
-Wed Sep 22 23:42:20 2021
+Fri Sep 24 00:45:10 2021
 Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
 
 
@@ -103,7 +103,7 @@ agreement for further details.
 +------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                 ;
 +---------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Sep 22 23:42:20 2021      ;
+; Analysis & Synthesis Status     ; Successful - Fri Sep 24 00:45:10 2021      ;
 ; Quartus II 64-Bit Version       ; 14.1.0 Build 186 12/03/2014 SJ Web Edition ;
 ; Revision Name                   ; Basic_Organ_Solution                       ;
 ; Top-level Entity Name           ; Basic_Organ_Solution                       ;
@@ -243,6 +243,7 @@ agreement for further details.
 ; audio_controller.qxp                                   ; yes             ; User File                                    ; C:/Users/forss/Desktop/CPEN 311 ActivitiesLabs/Lab1/lab1_template_de1soc/audio_controller.qxp                                   ;             ;
 ; async_trap_and_reset_gen_1_pulse.qxp                   ; yes             ; User File                                    ; C:/Users/forss/Desktop/CPEN 311 ActivitiesLabs/Lab1/lab1_template_de1soc/async_trap_and_reset_gen_1_pulse.qxp                   ;             ;
 ; Basic_Organ_Solution.v                                 ; yes             ; User Verilog HDL File                        ; C:/Users/forss/Desktop/CPEN 311 ActivitiesLabs/Lab1/lab1_template_de1soc/Basic_Organ_Solution.v                                 ;             ;
+; Tone_Organ_LEDs.v                                      ; yes             ; User Verilog HDL File                        ; C:/Users/forss/Desktop/CPEN 311 ActivitiesLabs/Lab1/lab1_template_de1soc/Tone_Organ_LEDs.v                                      ;             ;
 ; generate_arbitrary_divided_clk32.v                     ; yes             ; Auto-Found Verilog HDL File                  ; C:/Users/forss/Desktop/CPEN 311 ActivitiesLabs/Lab1/lab1_template_de1soc/generate_arbitrary_divided_clk32.v                     ;             ;
 ; doublesync.v                                           ; yes             ; Auto-Found Verilog HDL File                  ; C:/Users/forss/Desktop/CPEN 311 ActivitiesLabs/Lab1/lab1_template_de1soc/doublesync.v                                           ;             ;
 ; scope_capture.v                                        ; yes             ; Auto-Found Verilog HDL File                  ; C:/Users/forss/Desktop/CPEN 311 ActivitiesLabs/Lab1/lab1_template_de1soc/scope_capture.v                                        ;             ;
@@ -338,7 +339,7 @@ agreement for further details.
 +---------------------------------------------------------------------------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                                                                              ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                                                                                                                                                         ; Library Name ;
 +---------------------------------------------------------------------------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |Basic_Organ_Solution                                                                                   ; 2393 (58)         ; 5574 (50)    ; 55552             ; 0          ; 147  ; 0            ; |Basic_Organ_Solution                                                                                                                                                                                                                                                                                                                                       ; work         ;
+; |Basic_Organ_Solution                                                                                   ; 2393 (56)         ; 5574 (50)    ; 55552             ; 0          ; 147  ; 0            ; |Basic_Organ_Solution                                                                                                                                                                                                                                                                                                                                       ; work         ;
 ;    |Generate_Arbitrary_Divided_Clk32:Gen_1KHz_clk|                                                      ; 48 (0)            ; 39 (0)       ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|Generate_Arbitrary_Divided_Clk32:Gen_1KHz_clk                                                                                                                                                                                                                                                                                         ; work         ;
 ;       |var_clk_div32:Div_Clk|                                                                           ; 48 (48)           ; 39 (39)      ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|Generate_Arbitrary_Divided_Clk32:Gen_1KHz_clk|var_clk_div32:Div_Clk                                                                                                                                                                                                                                                                   ; work         ;
 ;    |Generate_Arbitrary_Divided_Clk32:Gen_2Hz_clk|                                                       ; 48 (0)            ; 39 (0)       ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|Generate_Arbitrary_Divided_Clk32:Gen_2Hz_clk                                                                                                                                                                                                                                                                                          ; work         ;
@@ -372,6 +373,7 @@ agreement for further details.
 ;                |pacoblaze3_register:register|                                                           ; 56 (56)           ; 128 (128)    ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|LCD_Scope_Encapsulated_pacoblaze:LCD_Scope_Encapsulated_pacoblaze_inst|LCD_SCOPE_Verilog_pacoblaze:Internal_LCD_Scope|pacoblaze3:led_8seg_kcpsm|pacoblaze3_register:register                                                                                                   ; work         ;
 ;                |pacoblaze3_scratch:scratch|                                                             ; 128 (128)         ; 512 (512)    ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|LCD_Scope_Encapsulated_pacoblaze:LCD_Scope_Encapsulated_pacoblaze_inst|LCD_SCOPE_Verilog_pacoblaze:Internal_LCD_Scope|pacoblaze3:led_8seg_kcpsm|pacoblaze3_scratch:scratch                                                                                                     ; work         ;
 ;                |pacoblaze3_stack:stack|                                                                 ; 49 (49)           ; 325 (325)    ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|LCD_Scope_Encapsulated_pacoblaze:LCD_Scope_Encapsulated_pacoblaze_inst|LCD_SCOPE_Verilog_pacoblaze:Internal_LCD_Scope|pacoblaze3:led_8seg_kcpsm|pacoblaze3_stack:stack                                                                                                         ; work         ;
+;    |SelectFrequencies:ToneOrgan|                                                                        ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|SelectFrequencies:ToneOrgan                                                                                                                                                                                                                                                                                                           ; work         ;
 ;    |SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst0|                                        ; 7 (7)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst0                                                                                                                                                                                                                                                                           ; work         ;
 ;    |SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst1|                                        ; 7 (7)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst1                                                                                                                                                                                                                                                                           ; work         ;
 ;    |SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst2|                                        ; 7 (7)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst2                                                                                                                                                                                                                                                                           ; work         ;
@@ -4642,22 +4644,22 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InG[6]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; SW[6]                                                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InG[7]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; SW[7]                                                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InG[7]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; SW[7]                                                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InH[0]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; ScopeChannelASignal                                                                  ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InH[0]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; ScopeChannelASignal                                                                  ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InH[1]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; ScopeChannelASignal                                                                  ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InH[1]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; ScopeChannelASignal                                                                  ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InH[2]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; ScopeChannelASignal                                                                  ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InH[2]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; ScopeChannelASignal                                                                  ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InH[3]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; ScopeChannelASignal                                                                  ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InH[3]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; ScopeChannelASignal                                                                  ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InH[4]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; ScopeChannelASignal                                                                  ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InH[4]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; ScopeChannelASignal                                                                  ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InH[5]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; ScopeChannelASignal                                                                  ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InH[5]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; ScopeChannelASignal                                                                  ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InH[6]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; ScopeChannelASignal                                                                  ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InH[6]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; ScopeChannelASignal                                                                  ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InH[7]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; ScopeChannelASignal~_wirecell                                                        ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InH[7]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; ScopeChannelASignal~_wirecell                                                        ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InH[0]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; audio_data[0]~0                                                                      ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InH[0]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; audio_data[0]~0                                                                      ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InH[1]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; audio_data[0]~0                                                                      ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InH[1]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; audio_data[0]~0                                                                      ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InH[2]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; audio_data[0]~0                                                                      ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InH[2]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; audio_data[0]~0                                                                      ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InH[3]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; audio_data[0]~0                                                                      ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InH[3]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; audio_data[0]~0                                                                      ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InH[4]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; audio_data[0]~0                                                                      ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InH[4]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; audio_data[0]~0                                                                      ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InH[5]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; audio_data[0]~0                                                                      ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InH[5]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; audio_data[0]~0                                                                      ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InH[6]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; audio_data[0]~0                                                                      ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InH[6]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; audio_data[0]~0                                                                      ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InH[7]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; audio_data[0]~0_wirecell                                                             ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InH[7]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; audio_data[0]~0_wirecell                                                             ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InfoA[0]           ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                                                  ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InfoA[0]           ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                                                  ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InfoA[10]          ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                                                  ; N/A     ;
@@ -5152,7 +5154,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
-    Info: Processing started: Wed Sep 22 23:42:00 2021
+    Info: Processing started: Fri Sep 24 00:44:49 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Basic_Organ_Solution -c Basic_Organ_Solution
 Info (11104): Parallel Compilation has detected 12 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 6 of the 6 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file sevensegmentdisplaydecoder.qxp
@@ -5172,19 +5174,22 @@ Info (12021): Found 1 design units, including 1 entities, in source file async_t
 Warning (10238): Verilog Module Declaration warning at Basic_Organ_Solution.v(40): ignored anonymous port(s) indicated by duplicate or dangling comma(s) in the port list for module "Basic_Organ_Solution"
 Info (12021): Found 1 design units, including 1 entities, in source file basic_organ_solution.v
     Info (12023): Found entity 1: Basic_Organ_Solution
+Info (12021): Found 1 design units, including 1 entities, in source file tone_organ_leds.v
+    Info (12023): Found entity 1: SelectFrequencies
 Info (12127): Elaborating entity "Basic_Organ_Solution" for the top level hierarchy
 Warning (10858): Verilog HDL warning at Basic_Organ_Solution.v(88): object LED used but never assigned
-Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.v(227): truncated value with size 32 to match size of target (1)
-Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.v(491): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.v(549): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.v(564): truncated value with size 8 to match size of target (7)
-Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.v(565): truncated value with size 8 to match size of target (7)
-Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.v(566): truncated value with size 8 to match size of target (7)
-Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.v(567): truncated value with size 8 to match size of target (7)
-Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.v(568): truncated value with size 8 to match size of target (7)
-Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.v(569): truncated value with size 8 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.v(483): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.v(541): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.v(556): truncated value with size 8 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.v(557): truncated value with size 8 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.v(558): truncated value with size 8 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.v(559): truncated value with size 8 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.v(560): truncated value with size 8 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.v(561): truncated value with size 8 to match size of target (7)
 Warning (10030): Net "LED" at Basic_Organ_Solution.v(88) has no driver or initial value, using a default initial value '0'
 Warning (10034): Output port "LEDR[9..8]" at Basic_Organ_Solution.v(50) has no driver
+Info (12128): Elaborating entity "SelectFrequencies" for hierarchy "SelectFrequencies:ToneOrgan"
+Warning (10230): Verilog HDL assignment warning at Tone_Organ_LEDs.v(17): truncated value with size 32 to match size of target (1)
 Warning (12125): Using design file generate_arbitrary_divided_clk32.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: Generate_Arbitrary_Divided_Clk32
 Info (12128): Elaborating entity "Generate_Arbitrary_Divided_Clk32" for hierarchy "Generate_Arbitrary_Divided_Clk32:Gen_Do_clk"
@@ -5417,9 +5422,9 @@ Info (21057): Implemented 7330 device resources after synthesis - the final reso
     Info (21061): Implemented 6870 logic cells
     Info (21064): Implemented 308 RAM segments
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 113 warnings
-    Info: Peak virtual memory: 4973 megabytes
-    Info: Processing ended: Wed Sep 22 23:42:20 2021
-    Info: Elapsed time: 00:00:20
-    Info: Total CPU time (on all processors): 00:00:36
+    Info: Peak virtual memory: 4966 megabytes
+    Info: Processing ended: Fri Sep 24 00:45:10 2021
+    Info: Elapsed time: 00:00:21
+    Info: Total CPU time (on all processors): 00:00:38
 
 
