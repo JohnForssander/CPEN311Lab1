@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Basic_Organ_Solution
-Fri Sep 24 03:46:00 2021
+Fri Sep 24 04:38:22 2021
 Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
 
 
@@ -46,38 +46,40 @@ Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
  38. Parameter Settings for User Entity Instance: DivClk_Parameterized:Gen_My_La_clk
  39. Parameter Settings for User Entity Instance: DivClk_Parameterized:Gen_My_Ti_clk
  40. Parameter Settings for User Entity Instance: DivClk_Parameterized:Gen_My_Do2_clk
- 41. Parameter Settings for User Entity Instance: scope_capture:LCD_scope_channelA
- 42. Parameter Settings for User Entity Instance: scope_capture:LCD_scope_channelB
- 43. Parameter Settings for User Entity Instance: speed_reg_control:speed_reg_control_inst
- 44. Parameter Settings for User Entity Instance: to_slow_clk_interface:interface_actual_audio_data_right
- 45. Parameter Settings for User Entity Instance: to_slow_clk_interface:interface_actual_audio_data_left
- 46. Parameter Settings for Inferred Entity Instance: sld_signaltap:auto_signaltap_0
- 47. Port Connectivity Checks: "Generate_Arbitrary_Divided_Clk32:Gen_2Hz_clk"
- 48. Port Connectivity Checks: "doublesync:key2_doublsync"
- 49. Port Connectivity Checks: "doublesync:key1_doublsync"
- 50. Port Connectivity Checks: "doublesync:key0_doublsync"
- 51. Port Connectivity Checks: "Generate_Arbitrary_Divided_Clk32:Gen_1KHz_clk"
- 52. Port Connectivity Checks: "LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope"
- 53. Port Connectivity Checks: "scope_capture:LCD_scope_channelB"
- 54. Port Connectivity Checks: "scope_capture:LCD_scope_channelA|doublesync:sync_enable"
- 55. Port Connectivity Checks: "scope_capture:LCD_scope_channelA"
- 56. Port Connectivity Checks: "Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk"
- 57. Port Connectivity Checks: "doublesync:user_scope_enable_sync1"
- 58. Port Connectivity Checks: "DivClk_Parameterized:Gen_My_Do2_clk"
- 59. Port Connectivity Checks: "DivClk_Parameterized:Gen_My_Ti_clk"
- 60. Port Connectivity Checks: "DivClk_Parameterized:Gen_My_La_clk"
- 61. Port Connectivity Checks: "DivClk_Parameterized:Gen_My_So_clk"
- 62. Port Connectivity Checks: "DivClk_Parameterized:Gen_My_Fa_clk"
- 63. Port Connectivity Checks: "DivClk_Parameterized:Gen_My_Mi_clk"
- 64. Port Connectivity Checks: "DivClk_Parameterized:Gen_My_Re_clk"
- 65. Port Connectivity Checks: "DivClk_Parameterized:Gen_My_Do_clk"
- 66. SignalTap II Logic Analyzer Settings
- 67. Post-Synthesis Netlist Statistics for Top Partition
- 68. Post-Synthesis Netlist Statistics for Partition sld_hub:auto_hub
- 69. Elapsed Time Per Partition
- 70. Connections to In-System Debugging Instance "auto_signaltap_0"
- 71. Analysis & Synthesis Messages
- 72. Analysis & Synthesis Suppressed Messages
+ 41. Parameter Settings for User Entity Instance: DivClk_Parameterized:Gen_My_LED_clk
+ 42. Parameter Settings for User Entity Instance: scope_capture:LCD_scope_channelA
+ 43. Parameter Settings for User Entity Instance: scope_capture:LCD_scope_channelB
+ 44. Parameter Settings for User Entity Instance: speed_reg_control:speed_reg_control_inst
+ 45. Parameter Settings for User Entity Instance: to_slow_clk_interface:interface_actual_audio_data_right
+ 46. Parameter Settings for User Entity Instance: to_slow_clk_interface:interface_actual_audio_data_left
+ 47. Parameter Settings for Inferred Entity Instance: sld_signaltap:auto_signaltap_0
+ 48. Port Connectivity Checks: "Generate_Arbitrary_Divided_Clk32:Gen_2Hz_clk"
+ 49. Port Connectivity Checks: "doublesync:key2_doublsync"
+ 50. Port Connectivity Checks: "doublesync:key1_doublsync"
+ 51. Port Connectivity Checks: "doublesync:key0_doublsync"
+ 52. Port Connectivity Checks: "Generate_Arbitrary_Divided_Clk32:Gen_1KHz_clk"
+ 53. Port Connectivity Checks: "LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope"
+ 54. Port Connectivity Checks: "scope_capture:LCD_scope_channelB"
+ 55. Port Connectivity Checks: "scope_capture:LCD_scope_channelA|doublesync:sync_enable"
+ 56. Port Connectivity Checks: "scope_capture:LCD_scope_channelA"
+ 57. Port Connectivity Checks: "Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk"
+ 58. Port Connectivity Checks: "doublesync:user_scope_enable_sync1"
+ 59. Port Connectivity Checks: "LEDSlider:Control_LEDS"
+ 60. Port Connectivity Checks: "DivClk_Parameterized:Gen_My_LED_clk"
+ 61. Port Connectivity Checks: "DivClk_Parameterized:Gen_My_Do2_clk"
+ 62. Port Connectivity Checks: "DivClk_Parameterized:Gen_My_Ti_clk"
+ 63. Port Connectivity Checks: "DivClk_Parameterized:Gen_My_La_clk"
+ 64. Port Connectivity Checks: "DivClk_Parameterized:Gen_My_So_clk"
+ 65. Port Connectivity Checks: "DivClk_Parameterized:Gen_My_Fa_clk"
+ 66. Port Connectivity Checks: "DivClk_Parameterized:Gen_My_Mi_clk"
+ 67. Port Connectivity Checks: "DivClk_Parameterized:Gen_My_Re_clk"
+ 68. Port Connectivity Checks: "DivClk_Parameterized:Gen_My_Do_clk"
+ 69. SignalTap II Logic Analyzer Settings
+ 70. Post-Synthesis Netlist Statistics for Top Partition
+ 71. Post-Synthesis Netlist Statistics for Partition sld_hub:auto_hub
+ 72. Elapsed Time Per Partition
+ 73. Connections to In-System Debugging Instance "auto_signaltap_0"
+ 74. Analysis & Synthesis Messages
 
 
 
@@ -104,13 +106,13 @@ agreement for further details.
 +------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                 ;
 +---------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Fri Sep 24 03:45:59 2021      ;
+; Analysis & Synthesis Status     ; Successful - Fri Sep 24 04:38:22 2021      ;
 ; Quartus II 64-Bit Version       ; 14.1.0 Build 186 12/03/2014 SJ Web Edition ;
 ; Revision Name                   ; Basic_Organ_Solution                       ;
 ; Top-level Entity Name           ; Basic_Organ_Solution                       ;
 ; Family                          ; Cyclone V                                  ;
 ; Logic utilization (in ALMs)     ; N/A                                        ;
-; Total registers                 ; 5526                                       ;
+; Total registers                 ; 5579                                       ;
 ; Total pins                      ; 147                                        ;
 ; Total virtual pins              ; 0                                          ;
 ; Total block memory bits         ; 55,552                                     ;
@@ -311,16 +313,16 @@ agreement for further details.
 +---------------------------------------------+--------------------------------------------------------------------------------------+
 ; Resource                                    ; Usage                                                                                ;
 +---------------------------------------------+--------------------------------------------------------------------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 3257                                                                                 ;
+; Estimate of Logic utilization (ALMs needed) ; 3290                                                                                 ;
 ;                                             ;                                                                                      ;
-; Combinational ALUT usage for logic          ; 2339                                                                                 ;
+; Combinational ALUT usage for logic          ; 2413                                                                                 ;
 ;     -- 7 input functions                    ; 24                                                                                   ;
-;     -- 6 input functions                    ; 835                                                                                  ;
-;     -- 5 input functions                    ; 487                                                                                  ;
-;     -- 4 input functions                    ; 158                                                                                  ;
-;     -- <=3 input functions                  ; 835                                                                                  ;
+;     -- 6 input functions                    ; 837                                                                                  ;
+;     -- 5 input functions                    ; 495                                                                                  ;
+;     -- 4 input functions                    ; 172                                                                                  ;
+;     -- <=3 input functions                  ; 885                                                                                  ;
 ;                                             ;                                                                                      ;
-; Dedicated logic registers                   ; 5526                                                                                 ;
+; Dedicated logic registers                   ; 5579                                                                                 ;
 ;                                             ;                                                                                      ;
 ; I/O pins                                    ; 147                                                                                  ;
 ; Total MLAB memory bits                      ; 0                                                                                    ;
@@ -330,8 +332,8 @@ agreement for further details.
 ;                                             ;                                                                                      ;
 ; Maximum fan-out node                        ; Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg ;
 ; Maximum fan-out                             ; 2712                                                                                 ;
-; Total fan-out                               ; 32708                                                                                ;
-; Average fan-out                             ; 3.82                                                                                 ;
+; Total fan-out                               ; 33079                                                                                ;
+; Average fan-out                             ; 3.81                                                                                 ;
 +---------------------------------------------+--------------------------------------------------------------------------------------+
 
 
@@ -340,10 +342,11 @@ agreement for further details.
 +---------------------------------------------------------------------------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                                                                              ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                                                                                                                                                         ; Library Name ;
 +---------------------------------------------------------------------------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |Basic_Organ_Solution                                                                                   ; 2339 (56)         ; 5526 (50)    ; 55552             ; 0          ; 147  ; 0            ; |Basic_Organ_Solution                                                                                                                                                                                                                                                                                                                                       ; work         ;
+; |Basic_Organ_Solution                                                                                   ; 2413 (56)         ; 5579 (50)    ; 55552             ; 0          ; 147  ; 0            ; |Basic_Organ_Solution                                                                                                                                                                                                                                                                                                                                       ; work         ;
 ;    |DivClk_Parameterized:Gen_My_Do2_clk|                                                                ; 41 (41)           ; 33 (33)      ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|DivClk_Parameterized:Gen_My_Do2_clk                                                                                                                                                                                                                                                                                                   ; work         ;
 ;    |DivClk_Parameterized:Gen_My_Do_clk|                                                                 ; 41 (41)           ; 33 (33)      ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|DivClk_Parameterized:Gen_My_Do_clk                                                                                                                                                                                                                                                                                                    ; work         ;
 ;    |DivClk_Parameterized:Gen_My_Fa_clk|                                                                 ; 41 (41)           ; 33 (33)      ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|DivClk_Parameterized:Gen_My_Fa_clk                                                                                                                                                                                                                                                                                                    ; work         ;
+;    |DivClk_Parameterized:Gen_My_LED_clk|                                                                ; 62 (62)           ; 49 (49)      ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|DivClk_Parameterized:Gen_My_LED_clk                                                                                                                                                                                                                                                                                                   ; work         ;
 ;    |DivClk_Parameterized:Gen_My_La_clk|                                                                 ; 40 (40)           ; 33 (33)      ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|DivClk_Parameterized:Gen_My_La_clk                                                                                                                                                                                                                                                                                                    ; work         ;
 ;    |DivClk_Parameterized:Gen_My_Mi_clk|                                                                 ; 43 (43)           ; 33 (33)      ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|DivClk_Parameterized:Gen_My_Mi_clk                                                                                                                                                                                                                                                                                                    ; work         ;
 ;    |DivClk_Parameterized:Gen_My_Re_clk|                                                                 ; 42 (42)           ; 33 (33)      ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|DivClk_Parameterized:Gen_My_Re_clk                                                                                                                                                                                                                                                                                                    ; work         ;
@@ -366,6 +369,7 @@ agreement for further details.
 ;                |pacoblaze3_register:register|                                                           ; 56 (56)           ; 128 (128)    ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|LCD_Scope_Encapsulated_pacoblaze:LCD_Scope_Encapsulated_pacoblaze_inst|LCD_SCOPE_Verilog_pacoblaze:Internal_LCD_Scope|pacoblaze3:led_8seg_kcpsm|pacoblaze3_register:register                                                                                                   ; work         ;
 ;                |pacoblaze3_scratch:scratch|                                                             ; 128 (128)         ; 512 (512)    ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|LCD_Scope_Encapsulated_pacoblaze:LCD_Scope_Encapsulated_pacoblaze_inst|LCD_SCOPE_Verilog_pacoblaze:Internal_LCD_Scope|pacoblaze3:led_8seg_kcpsm|pacoblaze3_scratch:scratch                                                                                                     ; work         ;
 ;                |pacoblaze3_stack:stack|                                                                 ; 49 (49)           ; 325 (325)    ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|LCD_Scope_Encapsulated_pacoblaze:LCD_Scope_Encapsulated_pacoblaze_inst|LCD_SCOPE_Verilog_pacoblaze:Internal_LCD_Scope|pacoblaze3:led_8seg_kcpsm|pacoblaze3_stack:stack                                                                                                         ; work         ;
+;    |LEDSlider:Control_LEDS|                                                                             ; 12 (12)           ; 4 (4)        ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|LEDSlider:Control_LEDS                                                                                                                                                                                                                                                                                                                ; work         ;
 ;    |SelectFrequencies:ToneOrgan|                                                                        ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|SelectFrequencies:ToneOrgan                                                                                                                                                                                                                                                                                                           ; work         ;
 ;    |SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst0|                                        ; 7 (7)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst0                                                                                                                                                                                                                                                                           ; work         ;
 ;    |SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst1|                                        ; 7 (7)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst1                                                                                                                                                                                                                                                                           ; work         ;
@@ -766,8 +770,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 5526  ;
-; Number of registers using Synchronous Clear  ; 384   ;
+; Total registers                              ; 5579  ;
+; Number of registers using Synchronous Clear  ; 432   ;
 ; Number of registers using Synchronous Load   ; 1565  ;
 ; Number of registers using Asynchronous Clear ; 1455  ;
 ; Number of registers using Asynchronous Load  ; 0     ;
@@ -2823,100 +2827,101 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------+-------+------+----------------------+
 
 
-+--------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |Basic_Organ_Solution       ;
-+---------------------------------------+----------------------------------+-----------------+
-; Parameter Name                        ; Value                            ; Type            ;
-+---------------------------------------+----------------------------------+-----------------+
-; character_0                           ; 00110000                         ; Unsigned Binary ;
-; character_1                           ; 00110001                         ; Unsigned Binary ;
-; character_2                           ; 00110010                         ; Unsigned Binary ;
-; character_3                           ; 00110011                         ; Unsigned Binary ;
-; character_4                           ; 00110100                         ; Unsigned Binary ;
-; character_5                           ; 00110101                         ; Unsigned Binary ;
-; character_6                           ; 00110110                         ; Unsigned Binary ;
-; character_7                           ; 00110111                         ; Unsigned Binary ;
-; character_8                           ; 00111000                         ; Unsigned Binary ;
-; character_9                           ; 00111001                         ; Unsigned Binary ;
-; character_A                           ; 01000001                         ; Unsigned Binary ;
-; character_B                           ; 01000010                         ; Unsigned Binary ;
-; character_C                           ; 01000011                         ; Unsigned Binary ;
-; character_D                           ; 01000100                         ; Unsigned Binary ;
-; character_E                           ; 01000101                         ; Unsigned Binary ;
-; character_F                           ; 01000110                         ; Unsigned Binary ;
-; character_G                           ; 01000111                         ; Unsigned Binary ;
-; character_H                           ; 01001000                         ; Unsigned Binary ;
-; character_I                           ; 01001001                         ; Unsigned Binary ;
-; character_J                           ; 01001010                         ; Unsigned Binary ;
-; character_K                           ; 01001011                         ; Unsigned Binary ;
-; character_L                           ; 01001100                         ; Unsigned Binary ;
-; character_M                           ; 01001101                         ; Unsigned Binary ;
-; character_N                           ; 01001110                         ; Unsigned Binary ;
-; character_O                           ; 01001111                         ; Unsigned Binary ;
-; character_P                           ; 01010000                         ; Unsigned Binary ;
-; character_Q                           ; 01010001                         ; Unsigned Binary ;
-; character_R                           ; 01010010                         ; Unsigned Binary ;
-; character_S                           ; 01010011                         ; Unsigned Binary ;
-; character_T                           ; 01010100                         ; Unsigned Binary ;
-; character_U                           ; 01010101                         ; Unsigned Binary ;
-; character_V                           ; 01010110                         ; Unsigned Binary ;
-; character_W                           ; 01010111                         ; Unsigned Binary ;
-; character_X                           ; 01011000                         ; Unsigned Binary ;
-; character_Y                           ; 01011001                         ; Unsigned Binary ;
-; character_Z                           ; 01011010                         ; Unsigned Binary ;
-; character_lowercase_a                 ; 01100001                         ; Unsigned Binary ;
-; character_lowercase_b                 ; 01100010                         ; Unsigned Binary ;
-; character_lowercase_c                 ; 01100011                         ; Unsigned Binary ;
-; character_lowercase_d                 ; 01100100                         ; Unsigned Binary ;
-; character_lowercase_e                 ; 01100101                         ; Unsigned Binary ;
-; character_lowercase_f                 ; 01100110                         ; Unsigned Binary ;
-; character_lowercase_g                 ; 01100111                         ; Unsigned Binary ;
-; character_lowercase_h                 ; 01101000                         ; Unsigned Binary ;
-; character_lowercase_i                 ; 01101001                         ; Unsigned Binary ;
-; character_lowercase_j                 ; 01101010                         ; Unsigned Binary ;
-; character_lowercase_k                 ; 01101011                         ; Unsigned Binary ;
-; character_lowercase_l                 ; 01101100                         ; Unsigned Binary ;
-; character_lowercase_m                 ; 01101101                         ; Unsigned Binary ;
-; character_lowercase_n                 ; 01101110                         ; Unsigned Binary ;
-; character_lowercase_o                 ; 01101111                         ; Unsigned Binary ;
-; character_lowercase_p                 ; 01110000                         ; Unsigned Binary ;
-; character_lowercase_q                 ; 01110001                         ; Unsigned Binary ;
-; character_lowercase_r                 ; 01110010                         ; Unsigned Binary ;
-; character_lowercase_s                 ; 01110011                         ; Unsigned Binary ;
-; character_lowercase_t                 ; 01110100                         ; Unsigned Binary ;
-; character_lowercase_u                 ; 01110101                         ; Unsigned Binary ;
-; character_lowercase_v                 ; 01110110                         ; Unsigned Binary ;
-; character_lowercase_w                 ; 01110111                         ; Unsigned Binary ;
-; character_lowercase_x                 ; 01111000                         ; Unsigned Binary ;
-; character_lowercase_y                 ; 01111001                         ; Unsigned Binary ;
-; character_lowercase_z                 ; 01111010                         ; Unsigned Binary ;
-; character_colon                       ; 00111010                         ; Unsigned Binary ;
-; character_stop                        ; 00101110                         ; Unsigned Binary ;
-; character_semi_colon                  ; 00111011                         ; Unsigned Binary ;
-; character_minus                       ; 00101101                         ; Unsigned Binary ;
-; character_divide                      ; 00101111                         ; Unsigned Binary ;
-; character_plus                        ; 00101011                         ; Unsigned Binary ;
-; character_comma                       ; 00101100                         ; Unsigned Binary ;
-; character_less_than                   ; 00111100                         ; Unsigned Binary ;
-; character_greater_than                ; 00111110                         ; Unsigned Binary ;
-; character_equals                      ; 00111101                         ; Unsigned Binary ;
-; character_question                    ; 00111111                         ; Unsigned Binary ;
-; character_dollar                      ; 00100100                         ; Unsigned Binary ;
-; character_space                       ; 00100000                         ; Unsigned Binary ;
-; character_exclaim                     ; 00100001                         ; Unsigned Binary ;
-; Do_523Hz                              ; 00000000000000001011101010110111 ; Unsigned Binary ;
-; Re_587Hz                              ; 00000000000000001010011001011011 ; Unsigned Binary ;
-; Mi_659Hz                              ; 00000000000000001001010000101110 ; Unsigned Binary ;
-; Fa_698Hz                              ; 00000000000000001000101111100111 ; Unsigned Binary ;
-; So_783Hz                              ; 00000000000000000111110010110110 ; Unsigned Binary ;
-; La_880Hz                              ; 00000000000000000110111011110111 ; Unsigned Binary ;
-; Ti_987Hz                              ; 00000000000000000110001011101111 ; Unsigned Binary ;
-; Do_1046Hz                             ; 00000000000000000101110101011011 ; Unsigned Binary ;
-; num_updown_events_per_sec             ; 10                               ; Signed Integer  ;
-; num_1KHZ_clocks_between_updown_events ; 100                              ; Signed Integer  ;
-; oscilloscope_speed_step               ; 100                              ; Signed Integer  ;
-; default_scope_sampling_clock_count    ; 0011000011010011                 ; Unsigned Binary ;
-+---------------------------------------+----------------------------------+-----------------+
++------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |Basic_Organ_Solution                       ;
++---------------------------------------+--------------------------------------------------+-----------------+
+; Parameter Name                        ; Value                                            ; Type            ;
++---------------------------------------+--------------------------------------------------+-----------------+
+; character_0                           ; 00110000                                         ; Unsigned Binary ;
+; character_1                           ; 00110001                                         ; Unsigned Binary ;
+; character_2                           ; 00110010                                         ; Unsigned Binary ;
+; character_3                           ; 00110011                                         ; Unsigned Binary ;
+; character_4                           ; 00110100                                         ; Unsigned Binary ;
+; character_5                           ; 00110101                                         ; Unsigned Binary ;
+; character_6                           ; 00110110                                         ; Unsigned Binary ;
+; character_7                           ; 00110111                                         ; Unsigned Binary ;
+; character_8                           ; 00111000                                         ; Unsigned Binary ;
+; character_9                           ; 00111001                                         ; Unsigned Binary ;
+; character_A                           ; 01000001                                         ; Unsigned Binary ;
+; character_B                           ; 01000010                                         ; Unsigned Binary ;
+; character_C                           ; 01000011                                         ; Unsigned Binary ;
+; character_D                           ; 01000100                                         ; Unsigned Binary ;
+; character_E                           ; 01000101                                         ; Unsigned Binary ;
+; character_F                           ; 01000110                                         ; Unsigned Binary ;
+; character_G                           ; 01000111                                         ; Unsigned Binary ;
+; character_H                           ; 01001000                                         ; Unsigned Binary ;
+; character_I                           ; 01001001                                         ; Unsigned Binary ;
+; character_J                           ; 01001010                                         ; Unsigned Binary ;
+; character_K                           ; 01001011                                         ; Unsigned Binary ;
+; character_L                           ; 01001100                                         ; Unsigned Binary ;
+; character_M                           ; 01001101                                         ; Unsigned Binary ;
+; character_N                           ; 01001110                                         ; Unsigned Binary ;
+; character_O                           ; 01001111                                         ; Unsigned Binary ;
+; character_P                           ; 01010000                                         ; Unsigned Binary ;
+; character_Q                           ; 01010001                                         ; Unsigned Binary ;
+; character_R                           ; 01010010                                         ; Unsigned Binary ;
+; character_S                           ; 01010011                                         ; Unsigned Binary ;
+; character_T                           ; 01010100                                         ; Unsigned Binary ;
+; character_U                           ; 01010101                                         ; Unsigned Binary ;
+; character_V                           ; 01010110                                         ; Unsigned Binary ;
+; character_W                           ; 01010111                                         ; Unsigned Binary ;
+; character_X                           ; 01011000                                         ; Unsigned Binary ;
+; character_Y                           ; 01011001                                         ; Unsigned Binary ;
+; character_Z                           ; 01011010                                         ; Unsigned Binary ;
+; character_lowercase_a                 ; 01100001                                         ; Unsigned Binary ;
+; character_lowercase_b                 ; 01100010                                         ; Unsigned Binary ;
+; character_lowercase_c                 ; 01100011                                         ; Unsigned Binary ;
+; character_lowercase_d                 ; 01100100                                         ; Unsigned Binary ;
+; character_lowercase_e                 ; 01100101                                         ; Unsigned Binary ;
+; character_lowercase_f                 ; 01100110                                         ; Unsigned Binary ;
+; character_lowercase_g                 ; 01100111                                         ; Unsigned Binary ;
+; character_lowercase_h                 ; 01101000                                         ; Unsigned Binary ;
+; character_lowercase_i                 ; 01101001                                         ; Unsigned Binary ;
+; character_lowercase_j                 ; 01101010                                         ; Unsigned Binary ;
+; character_lowercase_k                 ; 01101011                                         ; Unsigned Binary ;
+; character_lowercase_l                 ; 01101100                                         ; Unsigned Binary ;
+; character_lowercase_m                 ; 01101101                                         ; Unsigned Binary ;
+; character_lowercase_n                 ; 01101110                                         ; Unsigned Binary ;
+; character_lowercase_o                 ; 01101111                                         ; Unsigned Binary ;
+; character_lowercase_p                 ; 01110000                                         ; Unsigned Binary ;
+; character_lowercase_q                 ; 01110001                                         ; Unsigned Binary ;
+; character_lowercase_r                 ; 01110010                                         ; Unsigned Binary ;
+; character_lowercase_s                 ; 01110011                                         ; Unsigned Binary ;
+; character_lowercase_t                 ; 01110100                                         ; Unsigned Binary ;
+; character_lowercase_u                 ; 01110101                                         ; Unsigned Binary ;
+; character_lowercase_v                 ; 01110110                                         ; Unsigned Binary ;
+; character_lowercase_w                 ; 01110111                                         ; Unsigned Binary ;
+; character_lowercase_x                 ; 01111000                                         ; Unsigned Binary ;
+; character_lowercase_y                 ; 01111001                                         ; Unsigned Binary ;
+; character_lowercase_z                 ; 01111010                                         ; Unsigned Binary ;
+; character_colon                       ; 00111010                                         ; Unsigned Binary ;
+; character_stop                        ; 00101110                                         ; Unsigned Binary ;
+; character_semi_colon                  ; 00111011                                         ; Unsigned Binary ;
+; character_minus                       ; 00101101                                         ; Unsigned Binary ;
+; character_divide                      ; 00101111                                         ; Unsigned Binary ;
+; character_plus                        ; 00101011                                         ; Unsigned Binary ;
+; character_comma                       ; 00101100                                         ; Unsigned Binary ;
+; character_less_than                   ; 00111100                                         ; Unsigned Binary ;
+; character_greater_than                ; 00111110                                         ; Unsigned Binary ;
+; character_equals                      ; 00111101                                         ; Unsigned Binary ;
+; character_question                    ; 00111111                                         ; Unsigned Binary ;
+; character_dollar                      ; 00100100                                         ; Unsigned Binary ;
+; character_space                       ; 00100000                                         ; Unsigned Binary ;
+; character_exclaim                     ; 00100001                                         ; Unsigned Binary ;
+; Do_523Hz                              ; 00000000000000001011101010110111                 ; Unsigned Binary ;
+; Re_587Hz                              ; 00000000000000001010011001011011                 ; Unsigned Binary ;
+; Mi_659Hz                              ; 00000000000000001001010000101110                 ; Unsigned Binary ;
+; Fa_698Hz                              ; 00000000000000001000101111100111                 ; Unsigned Binary ;
+; So_783Hz                              ; 00000000000000000111110010110110                 ; Unsigned Binary ;
+; La_880Hz                              ; 00000000000000000110111011110111                 ; Unsigned Binary ;
+; Ti_987Hz                              ; 00000000000000000110001011101111                 ; Unsigned Binary ;
+; Do_1046Hz                             ; 00000000000000000101110101011011                 ; Unsigned Binary ;
+; LED_1Hz                               ; 000000000000000000000001011111010111100000111110 ; Unsigned Binary ;
+; num_updown_events_per_sec             ; 10                                               ; Signed Integer  ;
+; num_1KHZ_clocks_between_updown_events ; 100                                              ; Signed Integer  ;
+; oscilloscope_speed_step               ; 100                                              ; Signed Integer  ;
+; default_scope_sampling_clock_count    ; 0011000011010011                                 ; Unsigned Binary ;
++---------------------------------------+--------------------------------------------------+-----------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -2996,6 +3001,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Parameter Name ; Value ; Type                                                    ;
 +----------------+-------+---------------------------------------------------------+
 ; WIDTH          ; 32    ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DivClk_Parameterized:Gen_My_LED_clk ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; WIDTH          ; 48    ; Signed Integer                                          ;
 +----------------+-------+---------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -3345,6 +3360,35 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------+-------+----------+-------------------------------------+
 
 
++----------------------------------------------------+
+; Port Connectivity Checks: "LEDSlider:Control_LEDS" ;
++-------+-------+----------+-------------------------+
+; Port  ; Type  ; Severity ; Details                 ;
++-------+-------+----------+-------------------------+
+; Reset ; Input ; Info     ; Stuck at GND            ;
++-------+-------+----------+-------------------------+
+
+
++-----------------------------------------------------------------+
+; Port Connectivity Checks: "DivClk_Parameterized:Gen_My_LED_clk" ;
++-----------------------+-------+----------+----------------------+
+; Port                  ; Type  ; Severity ; Details              ;
++-----------------------+-------+----------+----------------------+
+; div_clk_count[22..18] ; Input ; Info     ; Stuck at VCC         ;
+; div_clk_count[14..11] ; Input ; Info     ; Stuck at VCC         ;
+; div_clk_count[5..1]   ; Input ; Info     ; Stuck at VCC         ;
+; div_clk_count[47..25] ; Input ; Info     ; Stuck at GND         ;
+; div_clk_count[10..6]  ; Input ; Info     ; Stuck at GND         ;
+; div_clk_count[24]     ; Input ; Info     ; Stuck at VCC         ;
+; div_clk_count[23]     ; Input ; Info     ; Stuck at GND         ;
+; div_clk_count[17]     ; Input ; Info     ; Stuck at GND         ;
+; div_clk_count[16]     ; Input ; Info     ; Stuck at VCC         ;
+; div_clk_count[15]     ; Input ; Info     ; Stuck at GND         ;
+; div_clk_count[0]      ; Input ; Info     ; Stuck at GND         ;
+; Reset                 ; Input ; Info     ; Stuck at GND         ;
++-----------------------+-------+----------+----------------------+
+
+
 +-----------------------------------------------------------------+
 ; Port Connectivity Checks: "DivClk_Parameterized:Gen_My_Do2_clk" ;
 +-----------------------+-------+----------+----------------------+
@@ -3511,24 +3555,24 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------------------------------------------------------+-------+
 ; Type                                                                          ; Count ;
 +-------------------------------------------------------------------------------+-------+
-; arriav_ff                                                                     ; 356   ;
-;     SCLR                                                                      ; 272   ;
+; arriav_ff                                                                     ; 409   ;
+;     SCLR                                                                      ; 320   ;
 ;     SLD                                                                       ; 32    ;
-;     plain                                                                     ; 52    ;
+;     plain                                                                     ; 57    ;
 ; arriav_io_obuf                                                                ; 60    ;
-; arriav_lcell_comb                                                             ; 391   ;
-;     arith                                                                     ; 288   ;
-;         1 data inputs                                                         ; 288   ;
+; arriav_lcell_comb                                                             ; 465   ;
+;     arith                                                                     ; 336   ;
+;         1 data inputs                                                         ; 336   ;
 ;     extend                                                                    ; 2     ;
 ;         7 data inputs                                                         ; 2     ;
-;     normal                                                                    ; 101   ;
+;     normal                                                                    ; 127   ;
 ;         0 data inputs                                                         ; 2     ;
 ;         1 data inputs                                                         ; 9     ;
 ;         2 data inputs                                                         ; 6     ;
-;         3 data inputs                                                         ; 13    ;
-;         4 data inputs                                                         ; 20    ;
-;         5 data inputs                                                         ; 34    ;
-;         6 data inputs                                                         ; 17    ;
+;         3 data inputs                                                         ; 15    ;
+;         4 data inputs                                                         ; 34    ;
+;         5 data inputs                                                         ; 42    ;
+;         6 data inputs                                                         ; 19    ;
 ; blackbox                                                                      ; 16    ;
 ;         ar_clk_div32:Div_Clk                                                  ; 1     ;
 ;         ar_clk_div32:Div_Clk                                                  ; 1     ;
@@ -3548,8 +3592,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     to_slow_clk_interface:interface_actual_audio_data_right                   ; 1     ;
 ; boundary_port                                                                 ; 438   ;
 ;                                                                               ;       ;
-; Max LUT depth                                                                 ; 4.10  ;
-; Average LUT depth                                                             ; 2.47  ;
+; Max LUT depth                                                                 ; 5.70  ;
+; Average LUT depth                                                             ; 2.64  ;
 +-------------------------------------------------------------------------------+-------+
 
 
@@ -4219,7 +4263,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
-    Info: Processing started: Fri Sep 24 03:45:39 2021
+    Info: Processing started: Fri Sep 24 04:38:01 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Basic_Organ_Solution -c Basic_Organ_Solution
 Info (11104): Parallel Compilation has detected 12 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 6 of the 6 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file sevensegmentdisplaydecoder.qxp
@@ -4239,24 +4283,24 @@ Info (12021): Found 1 design units, including 1 entities, in source file async_t
 Warning (10238): Verilog Module Declaration warning at Basic_Organ_Solution.v(40): ignored anonymous port(s) indicated by duplicate or dangling comma(s) in the port list for module "Basic_Organ_Solution"
 Info (12021): Found 1 design units, including 1 entities, in source file basic_organ_solution.v
     Info (12023): Found entity 1: Basic_Organ_Solution
-Info (12021): Found 2 design units, including 2 entities, in source file mydivider_tone_organ_leds.v
+Info (12021): Found 3 design units, including 3 entities, in source file mydivider_tone_organ_leds.v
     Info (12023): Found entity 1: DivClk_Parameterized
     Info (12023): Found entity 2: SelectFrequencies
+    Info (12023): Found entity 3: LEDSlider
 Info (12127): Elaborating entity "Basic_Organ_Solution" for the top level hierarchy
-Warning (10858): Verilog HDL warning at Basic_Organ_Solution.v(88): object LED used but never assigned
-Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.v(483): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.v(541): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.v(556): truncated value with size 8 to match size of target (7)
-Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.v(557): truncated value with size 8 to match size of target (7)
-Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.v(558): truncated value with size 8 to match size of target (7)
-Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.v(559): truncated value with size 8 to match size of target (7)
-Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.v(560): truncated value with size 8 to match size of target (7)
-Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.v(561): truncated value with size 8 to match size of target (7)
-Warning (10030): Net "LED" at Basic_Organ_Solution.v(88) has no driver or initial value, using a default initial value '0'
+Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.v(502): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.v(560): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.v(575): truncated value with size 8 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.v(576): truncated value with size 8 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.v(577): truncated value with size 8 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.v(578): truncated value with size 8 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.v(579): truncated value with size 8 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.v(580): truncated value with size 8 to match size of target (7)
 Warning (10034): Output port "LEDR[9..8]" at Basic_Organ_Solution.v(50) has no driver
 Info (12128): Elaborating entity "SelectFrequencies" for hierarchy "SelectFrequencies:ToneOrgan"
-Warning (10230): Verilog HDL assignment warning at MyDivider_Tone_Organ_LEDs.v(71): truncated value with size 32 to match size of target (1)
 Info (12128): Elaborating entity "DivClk_Parameterized" for hierarchy "DivClk_Parameterized:Gen_My_Do_clk"
+Info (12128): Elaborating entity "DivClk_Parameterized" for hierarchy "DivClk_Parameterized:Gen_My_LED_clk"
+Info (12128): Elaborating entity "LEDSlider" for hierarchy "LEDSlider:Control_LEDS"
 Warning (12125): Using design file doublesync.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: doublesync
 Info (12128): Elaborating entity "doublesync" for hierarchy "doublesync:user_scope_enable_sync1"
@@ -4400,14 +4444,6 @@ Warning (13009): TRI or OPNDRN buffers permanently enabled
     Warning (13010): Node "GPIO_0[11]~synth"
     Warning (13010): Node "GPIO_0[12]~synth"
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "LEDR[0]" is stuck at GND
-    Warning (13410): Pin "LEDR[1]" is stuck at GND
-    Warning (13410): Pin "LEDR[2]" is stuck at GND
-    Warning (13410): Pin "LEDR[3]" is stuck at GND
-    Warning (13410): Pin "LEDR[4]" is stuck at GND
-    Warning (13410): Pin "LEDR[5]" is stuck at GND
-    Warning (13410): Pin "LEDR[6]" is stuck at GND
-    Warning (13410): Pin "LEDR[7]" is stuck at GND
     Warning (13410): Pin "LEDR[8]" is stuck at GND
     Warning (13410): Pin "LEDR[9]" is stuck at GND
 Info (286031): Timing-Driven Synthesis is running on partition "Top"
@@ -4415,7 +4451,6 @@ Info (17016): Found the following redundant logic cells in design
     Info (17048): Logic cell "ScopeChannelBSignal"
     Info (17048): Logic cell "scope_clk"
 Info (286031): Timing-Driven Synthesis is running on partition "sld_hub:auto_hub"
-Info (144001): Generated suppressed messages file C:/Users/forss/Desktop/CPEN 311 ActivitiesLabs/Lab1/lab1_template_de1soc/Basic_Organ_Solution.map.smsg
 Info (35024): Succesfully connected in-system debug instance "auto_signaltap_0" to all 613 required data inputs, trigger inputs, acquisition clocks, and dynamic pins
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 9 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -4467,22 +4502,16 @@ Info (35003): Optimize away 49 nodes that do not fanout to OUTPUT or BIDIR pins
 Warning (21074): Design contains 2 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "KEY[3]"
     Warning (15610): No output dependent on input pin "AUD_ADCDAT"
-Info (21057): Implemented 7236 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 7310 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 19 input pins
     Info (21059): Implemented 56 output pins
     Info (21060): Implemented 76 bidirectional pins
-    Info (21061): Implemented 6776 logic cells
+    Info (21061): Implemented 6850 logic cells
     Info (21064): Implemented 308 RAM segments
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 113 warnings
-    Info: Peak virtual memory: 4966 megabytes
-    Info: Processing ended: Fri Sep 24 03:46:00 2021
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 102 warnings
+    Info: Peak virtual memory: 4963 megabytes
+    Info: Processing ended: Fri Sep 24 04:38:22 2021
     Info: Elapsed time: 00:00:21
     Info: Total CPU time (on all processors): 00:00:38
-
-
-+------------------------------------------+
-; Analysis & Synthesis Suppressed Messages ;
-+------------------------------------------+
-The suppressed messages can be found in C:/Users/forss/Desktop/CPEN 311 ActivitiesLabs/Lab1/lab1_template_de1soc/Basic_Organ_Solution.map.smsg.
 
 

@@ -201,9 +201,13 @@ parameter La_880Hz = 32'h6EF7;
 parameter Ti_987Hz = 32'h62EF;
 parameter Do_1046Hz = 32'h5D5B;
 
-wire Clock_1KHz, Clock_1Hz, Clock_Audio;
+//1Hz Frequency
+parameter LED_1Hz = 48'h17D783E;
+
+wire Clock_1KHz, Clock_1Hz;
 wire Clock_Do, Clock_Re, Clock_Mi, Clock_Fa, Clock_So, Clock_La, Clock_Ti, Clock_Do2;
-wire Sample_Clk_Signal;
+wire Clock_LED;
+wire Sample_Clk_Signal, Clock_Audio;
 
 //=======================================================================================================================
 //
@@ -301,8 +305,23 @@ wire [7:0] audio_data = {(~Sample_Clk_Signal),{7{Sample_Clk_Signal}}}; //generat
 
 //LED code here
 
+//Instantiate 1Hz clock to control LEDs
+DivClk_Parameterized
+#(.WIDTH(48))
+Gen_My_LED_clk
+(.inclk(CLK_50M),
+.outclk(Clock_LED),
+.div_clk_count(LED_1Hz),
+.Reset(1'h0)
+);
 
-                
+LEDSlider
+Control_LEDS
+(.inclk(Clock_LED),
+ .Reset(1'b0),
+ .LED_out(LED[7:0])
+);
+
 //=====================================================================================
 //
 // LCD Scope Acquisition Circuitry Wire Definitions                 

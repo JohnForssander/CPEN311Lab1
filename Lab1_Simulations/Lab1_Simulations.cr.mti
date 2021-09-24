@@ -1,8 +1,23 @@
-{C:/Users/forss/Desktop/CPEN 311 ActivitiesLabs/Lab1/Lab1_Simulations/MyDivider_Tb.v} {1 {vlog -work work -stats=none {C:/Users/forss/Desktop/CPEN 311 ActivitiesLabs/Lab1/Lab1_Simulations/MyDivider_Tb.v}
+{C:/Users/forss/Desktop/CPEN 311 ActivitiesLabs/Lab1/Lab1_Simulations/Testbenches.v} {1 {vlog -work work -stats=none {C:/Users/forss/Desktop/CPEN 311 ActivitiesLabs/Lab1/Lab1_Simulations/Testbenches.v}
 Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
 -- Compiling module MyDivider_Tb
+-- Compiling module ToneOrgan_Tb
+-- Compiling module LEDSlider_Tb
 
 Top level modules:
 	MyDivider_Tb
+	ToneOrgan_Tb
+	LEDSlider_Tb
+
+} {} {}} {C:/Users/forss/Desktop/CPEN 311 ActivitiesLabs/Lab1/lab1_template_de1soc/MyDivider_Tone_Organ_LEDs.v} {1 {vlog -work work -sv -stats=none {C:/Users/forss/Desktop/CPEN 311 ActivitiesLabs/Lab1/lab1_template_de1soc/MyDivider_Tone_Organ_LEDs.v}
+Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+-- Compiling module DivClk_Parameterized
+-- Compiling module SelectFrequencies
+-- Compiling module LEDSlider
+
+Top level modules:
+	DivClk_Parameterized
+	SelectFrequencies
+	LEDSlider
 
 } {} {}}
