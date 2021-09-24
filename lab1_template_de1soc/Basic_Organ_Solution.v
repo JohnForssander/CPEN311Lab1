@@ -220,76 +220,76 @@ ToneOrgan
 );
 
 // Instatiate clock dividers for each note     
-Generate_Arbitrary_Divided_Clk32 
-Gen_Do_clk
+DivClk_Parameterized
+#(.WIDTH(32))
+Gen_My_Do_clk
 (.inclk(CLK_50M),
 .outclk(Clock_Do),
-.outclk_Not(),
 .div_clk_count(Do_523Hz),
-.Reset(1'h1)
+.Reset(1'h0)
 ); 
 
-Generate_Arbitrary_Divided_Clk32 
-Gen_Re_clk
+DivClk_Parameterized
+#(.WIDTH(32))
+Gen_My_Re_clk
 (.inclk(CLK_50M),
 .outclk(Clock_Re),
-.outclk_Not(),
 .div_clk_count(Re_587Hz),
-.Reset(1'h1)
+.Reset(1'h0)
 ); 
 
-Generate_Arbitrary_Divided_Clk32 
-Gen_Mi_clk
+DivClk_Parameterized
+#(.WIDTH(32))
+Gen_My_Mi_clk
 (.inclk(CLK_50M),
 .outclk(Clock_Mi),
-.outclk_Not(),
 .div_clk_count(Mi_659Hz),
-.Reset(1'h1)
+.Reset(1'h0)
 );
 
-Generate_Arbitrary_Divided_Clk32 
-Gen_Fa_clk
+DivClk_Parameterized
+#(.WIDTH(32))
+Gen_My_Fa_clk
 (.inclk(CLK_50M),
 .outclk(Clock_Fa),
-.outclk_Not(),
 .div_clk_count(Fa_698Hz),
-.Reset(1'h1)
+.Reset(1'h0)
 ); 
 
-Generate_Arbitrary_Divided_Clk32 
-Gen_So_clk
+DivClk_Parameterized
+#(.WIDTH(32))
+Gen_My_So_clk
 (.inclk(CLK_50M),
 .outclk(Clock_So),
-.outclk_Not(),
 .div_clk_count(So_783Hz),
-.Reset(1'h1)
+.Reset(1'h0)
 );
 
-Generate_Arbitrary_Divided_Clk32 
-Gen_La_clk
+DivClk_Parameterized
+#(.WIDTH(32))
+Gen_My_La_clk
 (.inclk(CLK_50M),
 .outclk(Clock_La),
-.outclk_Not(),
 .div_clk_count(La_880Hz),
-.Reset(1'h1)
+.Reset(1'h0)
 );
 
-Generate_Arbitrary_Divided_Clk32 
-Gen_Ti_clk
+DivClk_Parameterized
+#(.WIDTH(32))
+Gen_My_Ti_clk
 (.inclk(CLK_50M),
 .outclk(Clock_Ti),
-.outclk_Not(),
 .div_clk_count(Ti_987Hz),
-.Reset(1'h1)
+.Reset(1'h0)
 );
 
-Generate_Arbitrary_Divided_Clk32 
-Gen_Do2_clk
+DivClk_Parameterized
+#(.WIDTH(32))
+Gen_My_Do2_clk
 (.inclk(CLK_50M),
 .outclk(Clock_Do2),
-.outclk_Not(),
 .div_clk_count(Do_1046Hz),
-.Reset(1'h1)
+.Reset(1'h0)
 );
 
 // S[0] LOW off means turn off

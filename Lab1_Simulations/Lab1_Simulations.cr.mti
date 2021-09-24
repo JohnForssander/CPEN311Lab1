@@ -1,0 +1,8 @@
+{C:/Users/forss/Desktop/CPEN 311 ActivitiesLabs/Lab1/Lab1_Simulations/MyDivider_Tb.v} {1 {vlog -work work -stats=none {C:/Users/forss/Desktop/CPEN 311 ActivitiesLabs/Lab1/Lab1_Simulations/MyDivider_Tb.v}
+Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+-- Compiling module MyDivider_Tb
+
+Top level modules:
+	MyDivider_Tb
+
+} {} {}}

@@ -6,10 +6,49 @@ module DivClk_Parameterized #(parameter WIDTH = 32)
 	output logic outclk
 );
 	
-logic clock_up_down;
-logic [WIDTH-1 : 0] counter;
+logic [WIDTH-1 : 0] count;
+logic [WIDTH-1 : 0] next_count;
+logic clock_up_down, next_clock_up_down;
 
+// Counter register
+always_ff @(posedge inclk, posedge Reset)
+    begin
+      if(Reset) count <= 0;
+      else      count <= next_count;
+    end
 
+// Next count and clock up or down logic
+always_comb
+  begin
+    if (count >= div_clk_count + 1)
+      next_count = 0;
+    else
+      next_count = count + 1;
+  end
+
+//outclk register
+always_ff @(posedge inclk, posedge Reset)
+  begin
+    if(Reset) clock_up_down <= 1'b0;
+    else      
+      begin
+        if (count >= div_clk_count + 1)
+          clock_up_down = ~next_clock_up_down;
+        else
+          clock_up_down <= next_clock_up_down;
+      end
+  end
+
+//outclk code here
+always_comb
+  begin
+    if (Reset)
+      next_clock_up_down = 1'b0;
+    else
+      next_clock_up_down = clock_up_down;
+  end
+
+assign outclk = clock_up_down;
 
 endmodule
 
@@ -29,7 +68,7 @@ module SelectFrequencies (
     3'b101: outclk_audio = Clocks[5];
     3'b110: outclk_audio = Clocks[6];
     3'b111: outclk_audio = Clocks[7];
-    default: outclk_audio = 32'b0;
+    default: outclk_audio = 1'b0;
   endcase
  end
 
